@@ -63,8 +63,8 @@ class APIHelper: NSObject {
 extension SDWebImageManager {
     public func ex_loadImage(url: NSURL) -> Promise<UIImage>{
         return Promise { seal in
-            SDWebImageManager.shared().loadImage(with: nil, options: [], progress: nil, completed: { (image, data, error, cacheType, done, url) in
-                if done && error != nil {
+            SDWebImageManager.shared().loadImage(with: url as URL, options: [], progress: nil, completed: { (image, data, error, cacheType, done, url) in
+                if done && error == nil {
                     seal.fulfill(image!)
                 }else if let error = error {
                     seal.reject(error)
