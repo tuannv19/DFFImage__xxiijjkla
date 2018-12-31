@@ -7,14 +7,28 @@
 //
 
 import UIKit
+import CocoaLumberjack
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
+    func initLog()  {
+        DDLog.add(DDASLLogger.sharedInstance, with: .all)
+        
+        
+        DDLogVerbose("Verbose")
+        DDLogDebug("Debug")
+        DDLogInfo("Info")
+        DDLogWarn("Warn")
+        DDLogError("Error")
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        initLog()
+        
         // Override point for customization after application launch.
         return true
     }

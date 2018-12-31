@@ -3,18 +3,7 @@ PODS:
   - CocoaLumberjack/Default (3.4.2)
   - CocoaLumberjack/Swift (3.4.2):
     - CocoaLumberjack/Default
-  - PromiseKit (6.7.0):
-    - PromiseKit/CorePromise (= 6.7.0)
-    - PromiseKit/Foundation (= 6.7.0)
-    - PromiseKit/UIKit (= 6.7.0)
-  - PromiseKit/Alamofire (6.7.0):
-    - Alamofire (~> 4.0)
-    - PromiseKit/CorePromise
   - PromiseKit/CorePromise (6.7.0)
-  - PromiseKit/Foundation (6.7.0):
-    - PromiseKit/CorePromise
-  - PromiseKit/UIKit (6.7.0):
-    - PromiseKit/CorePromise
   - SDWebImage (4.4.3):
     - SDWebImage/Core (= 4.4.3)
   - SDWebImage/Core (4.4.3)
@@ -23,8 +12,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - CocoaLumberjack/Swift
-  - PromiseKit (~> 6.0)
-  - PromiseKit/Alamofire (~> 6.0)
+  - PromiseKit/CorePromise (~> 6.0)
   - SDWebImage
   - SnapKit
 
@@ -43,6 +31,6 @@ SPEC CHECKSUMS:
   SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: c583d4e479714c43ab05456c745dfd43bdf28653
+PODFILE CHECKSUM: f023ba0401cb698180681ef45f51fdf2e0f12153
 
 COCOAPODS: 1.6.0.beta.2

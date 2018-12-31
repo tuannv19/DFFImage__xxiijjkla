@@ -7,9 +7,9 @@ target 'CC_IMG' do
 
   # Pods for CC_IMG
   pod 'CocoaLumberjack/Swift'
-  pod "PromiseKit", "~> 6.0"
+  pod 'PromiseKit/CorePromise', '~> 6.0'
   pod 'Alamofire'
-  pod 'PromiseKit/Alamofire', '~> 6.0'
+#  pod 'PromiseKit/Alamofire', '~> 6.0'
   pod 'SDWebImage'
   pod 'SnapKit'
 end

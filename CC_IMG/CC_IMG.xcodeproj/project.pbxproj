@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E1A86EF071FFF09080B3E07E /* Pods_CC_IMG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E61C29BA64760A271A52870 /* Pods_CC_IMG.framework */; };
+		ED0AD5D321D4771600515B0F /* ImgModelVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0AD5D221D4771600515B0F /* ImgModelVM.swift */; };
+		ED118BAB21DA0B350026E298 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED118BAA21DA0B350026E298 /* ImageCell.swift */; };
+		ED118BAD21DA131C0026E298 /* CCLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED118BAC21DA131C0026E298 /* CCLayout.swift */; };
 		ED23FCFE21CCCE650018B193 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED23FCFD21CCCE650018B193 /* AppDelegate.swift */; };
 		ED23FD0021CCCE650018B193 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED23FCFF21CCCE650018B193 /* ViewController.swift */; };
 		ED23FD0321CCCE650018B193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED23FD0121CCCE650018B193 /* Main.storyboard */; };
@@ -15,12 +18,16 @@
 		ED23FD0821CCCE690018B193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED23FD0621CCCE690018B193 /* LaunchScreen.storyboard */; };
 		ED23FD1021CCDA8C0018B193 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED23FD0F21CCDA8C0018B193 /* APIHelper.swift */; };
 		ED23FD1321CCEB740018B193 /* ImgModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED23FD1221CCEB740018B193 /* ImgModel.swift */; };
+		ED81DE5F21D0C8130034261E /* CategoryEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81DE5E21D0C8130034261E /* CategoryEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E61C29BA64760A271A52870 /* Pods_CC_IMG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CC_IMG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		158EA0C98B785283FD18A3C5 /* Pods-CC_IMG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CC_IMG.debug.xcconfig"; path = "Target Support Files/Pods-CC_IMG/Pods-CC_IMG.debug.xcconfig"; sourceTree = "<group>"; };
 		5F47DFCA0D0502AD4F6C29CB /* Pods-CC_IMG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CC_IMG.release.xcconfig"; path = "Target Support Files/Pods-CC_IMG/Pods-CC_IMG.release.xcconfig"; sourceTree = "<group>"; };
+		ED0AD5D221D4771600515B0F /* ImgModelVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgModelVM.swift; sourceTree = "<group>"; };
+		ED118BAA21DA0B350026E298 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		ED118BAC21DA131C0026E298 /* CCLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCLayout.swift; sourceTree = "<group>"; };
 		ED23FCFA21CCCE650018B193 /* CC_IMG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CC_IMG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED23FCFD21CCCE650018B193 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED23FCFF21CCCE650018B193 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +37,7 @@
 		ED23FD0921CCCE690018B193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED23FD0F21CCDA8C0018B193 /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
 		ED23FD1221CCEB740018B193 /* ImgModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgModel.swift; sourceTree = "<group>"; };
+		ED81DE5E21D0C8130034261E /* CategoryEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +58,16 @@
 				0E61C29BA64760A271A52870 /* Pods_CC_IMG.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED118BA921DA0B130026E298 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				ED23FCFF21CCCE650018B193 /* ViewController.swift */,
+				ED118BAA21DA0B350026E298 /* ImageCell.swift */,
+				ED118BAC21DA131C0026E298 /* CCLayout.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		ED23FCF121CCCE650018B193 = {
@@ -73,9 +91,10 @@
 		ED23FCFC21CCCE650018B193 /* CC_IMG */ = {
 			isa = PBXGroup;
 			children = (
+				ED118BA921DA0B130026E298 /* Home */,
+				ED81DE5D21D0C8060034261E /* API */,
 				ED23FD1121CCEB630018B193 /* Model */,
 				ED23FCFD21CCCE650018B193 /* AppDelegate.swift */,
-				ED23FCFF21CCCE650018B193 /* ViewController.swift */,
 				ED23FD0121CCCE650018B193 /* Main.storyboard */,
 				ED23FD0421CCCE690018B193 /* Assets.xcassets */,
 				ED23FD0621CCCE690018B193 /* LaunchScreen.storyboard */,
@@ -89,8 +108,17 @@
 			isa = PBXGroup;
 			children = (
 				ED23FD1221CCEB740018B193 /* ImgModel.swift */,
+				ED0AD5D221D4771600515B0F /* ImgModelVM.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		ED81DE5D21D0C8060034261E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				ED81DE5E21D0C8130034261E /* CategoryEndpoint.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		EF7200CC095252B8B2E729DD /* Pods */ = {
@@ -231,8 +259,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED23FD1021CCDA8C0018B193 /* APIHelper.swift in Sources */,
+				ED81DE5F21D0C8130034261E /* CategoryEndpoint.swift in Sources */,
+				ED0AD5D321D4771600515B0F /* ImgModelVM.swift in Sources */,
 				ED23FD0021CCCE650018B193 /* ViewController.swift in Sources */,
 				ED23FCFE21CCCE650018B193 /* AppDelegate.swift in Sources */,
+				ED118BAD21DA131C0026E298 /* CCLayout.swift in Sources */,
+				ED118BAB21DA0B350026E298 /* ImageCell.swift in Sources */,
 				ED23FD1321CCEB740018B193 /* ImgModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
