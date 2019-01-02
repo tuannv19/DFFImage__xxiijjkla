@@ -41,10 +41,7 @@ class ViewController: UIViewController {
         
         let cellLayout = CCLayout.init()
         cellLayout.delegate = self
-//        cellLayout.scrollDirection = .vertical
-//        cellLayout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
-        //        cellLayout.itemSize = CGSize(width: UIScreen.main.bounds.width, height: 185 + 80)
-        
+
         collectionView = UICollectionView.init(frame: CGRect(), collectionViewLayout: cellLayout)
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier:"UICollectionViewCell" )
         
@@ -61,6 +58,7 @@ class ViewController: UIViewController {
             make.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom)
         }
         collectionView.reloadData()
+        
         hotVM.fetch(next: false)
     }
     func showAlertWithError(error : NSError ) {
@@ -141,7 +139,6 @@ extension ViewController : UICollectionViewDataSource {
                 img.contentMode = .scaleAspectFit
             }.catch { (error) in
                 print(error)
-                
         }
         return cell
     }
