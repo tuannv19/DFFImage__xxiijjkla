@@ -24,13 +24,20 @@ class ImgModelVM {
         return imgModels?.count ?? 0
     }
     
-    var error : Error?
+    var error : NSError? {
+        didSet {
+            self.didOccurError(error!)
+        }
+    }
+    
+    
     var currentInDex = 1
     let sizeToFecth  = 16
     private var type : CategoryType?
     private  lazy var service = APIHelper()
     
     var didFinishLoad : ((ImgModel?)->())!
+    var didOccurError : ((NSError) ->())!
     
     var  next : Bool = false {
         didSet {
@@ -50,7 +57,7 @@ class ImgModelVM {
             .done { (data) in
                 self.imgModels  = data
             }.catch { (error) in
-                self.error = error
+                self.error = error as NSError
         }
     }
     

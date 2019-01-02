@@ -188,3 +188,18 @@ extension DataRequest {
         return responseDecodable(queue: queue, completionHandler: completionHandler)
     }
 }
+
+extension Array where Element == ImgModelElement {
+    func lightBoxArray() -> [LightboxImage] {
+        return  self.map({ (element) -> LightboxImage in
+            return element.lightBox()
+        })
+    }
+}
+extension ImgModelElement {
+    func lightBox() -> LightboxImage {
+        let imageURL = ImageEndpoint.get(self.images).url
+        let _lightBox = LightboxImage.init(imageURL: imageURL, text: self.title, videoURL: nil)
+        return _lightBox
+    }
+}

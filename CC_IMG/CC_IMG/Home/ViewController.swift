@@ -20,13 +20,18 @@ class ViewController: UIViewController {
                 self.collectionView.reloadData()
             }
         }
+        
+        imgModelVM.didOccurError = { error in
+            print(error)
+            self.showAlertWithError(error: error)
+        }
+        
         return imgModelVM
     }
     
     var hotVM  : ImgModelVM!
     
     var collectionView : UICollectionView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,7 +63,41 @@ class ViewController: UIViewController {
         collectionView.reloadData()
         hotVM.fetch(next: false)
     }
+    func showAlertWithError(error : NSError ) {
+        let alert = UIAlertController(title: "Error: \(error.code)", message: error.localizedDescription, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            switch action.style{
+            case .default:
+                print("default")
+                
+            case .cancel:
+                print("cancel")
+                
+            case .destructive:
+                print("destructive")
+                
+            }}))
+        self.present(alert, animated: true, completion: nil)
+    }
     
+    func showLightBox(atIndex : Int = 0)  {
+        
+        // Create an array of images.
+        let images = hotVM.imgModels?.lightBoxArray()
+        
+        // Create an instance of LightboxController.
+        let controller = LightboxController(images: images!, startIndex: atIndex)
+        // Set delegates.
+        controller.pageDelegate = self
+        controller.dismissalDelegate = self
+        
+        // Use dynamic background.
+        controller.dynamicBackground = true
+        
+        // Present your controller.
+        present(controller, animated: true, completion: nil)
+        
+    }
 }
 extension ViewController : UICollectionViewDelegate {
     
@@ -69,6 +108,11 @@ extension ViewController : UICollectionViewDataSource {
     }
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1 
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: false)
+        
+        showLightBox(atIndex: indexPath.row)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -97,6 +141,7 @@ extension ViewController : UICollectionViewDataSource {
                 img.contentMode = .scaleAspectFit
             }.catch { (error) in
                 print(error)
+                
         }
         return cell
     }
@@ -107,13 +152,21 @@ extension ViewController : UICollectionViewDataSource {
 //    }
 //}
 
-
 extension ViewController : CCLayoutDelegate {
     func collectionView(_ collectionView: UICollectionView, sizeForPhotoAtIndexPath indexPath: IndexPath) -> CGSize {
                 let imgElement = hotVM.imgModels?[indexPath.row]
                 let currentHeight =  CGFloat ( (imgElement?.height)! )
                 let currentWidth =  CGFloat ( (imgElement?.width)! )
-        
                 return CGSize(width: currentWidth, height: currentHeight)
+    }
+}
+extension ViewController : LightboxControllerPageDelegate {
+    func lightboxController(_ controller: LightboxController, didMoveToPage page: Int) {
+        
+    }
+}
+extension ViewController : LightboxControllerDismissalDelegate{
+    func lightboxControllerWillDismiss(_ controller: LightboxController) {
+        
     }
 }

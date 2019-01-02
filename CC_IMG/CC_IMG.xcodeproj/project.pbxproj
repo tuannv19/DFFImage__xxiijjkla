@@ -19,6 +19,20 @@
 		ED23FD1021CCDA8C0018B193 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED23FD0F21CCDA8C0018B193 /* APIHelper.swift */; };
 		ED23FD1321CCEB740018B193 /* ImgModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED23FD1221CCEB740018B193 /* ImgModel.swift */; };
 		ED81DE5F21D0C8130034261E /* CategoryEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81DE5E21D0C8130034261E /* CategoryEndpoint.swift */; };
+		EDC2F1F621DC69D400621F98 /* LightboxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC2F1E621DC69D400621F98 /* LightboxController.swift */; };
+		EDC2F1F721DC69D400621F98 /* LayoutConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC2F1E821DC69D400621F98 /* LayoutConfigurable.swift */; };
+		EDC2F1F821DC69D400621F98 /* UIView+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC2F1E921DC69D400621F98 /* UIView+Gradient.swift */; };
+		EDC2F1F921DC69D400621F98 /* LightboxTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC2F1EA21DC69D400621F98 /* LightboxTransition.swift */; };
+		EDC2F1FA21DC69D400621F98 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC2F1EB21DC69D400621F98 /* Color+Extensions.swift */; };
+		EDC2F1FB21DC69D400621F98 /* LightboxImageStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC2F1EC21DC69D400621F98 /* LightboxImageStub.swift */; };
+		EDC2F1FC21DC69D400621F98 /* LightboxConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC2F1ED21DC69D400621F98 /* LightboxConfig.swift */; };
+		EDC2F1FD21DC69D400621F98 /* AssetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC2F1EE21DC69D400621F98 /* AssetManager.swift */; };
+		EDC2F1FE21DC69D400621F98 /* LightboxImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC2F1EF21DC69D400621F98 /* LightboxImage.swift */; };
+		EDC2F1FF21DC69D400621F98 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC2F1F121DC69D400621F98 /* FooterView.swift */; };
+		EDC2F20021DC69D400621F98 /* InfoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC2F1F221DC69D400621F98 /* InfoLabel.swift */; };
+		EDC2F20121DC69D400621F98 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC2F1F321DC69D400621F98 /* HeaderView.swift */; };
+		EDC2F20221DC69D400621F98 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC2F1F421DC69D400621F98 /* LoadingIndicator.swift */; };
+		EDC2F20321DC69D400621F98 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC2F1F521DC69D400621F98 /* PageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +52,20 @@
 		ED23FD0F21CCDA8C0018B193 /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
 		ED23FD1221CCEB740018B193 /* ImgModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgModel.swift; sourceTree = "<group>"; };
 		ED81DE5E21D0C8130034261E /* CategoryEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryEndpoint.swift; sourceTree = "<group>"; };
+		EDC2F1E621DC69D400621F98 /* LightboxController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightboxController.swift; sourceTree = "<group>"; };
+		EDC2F1E821DC69D400621F98 /* LayoutConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConfigurable.swift; sourceTree = "<group>"; };
+		EDC2F1E921DC69D400621F98 /* UIView+Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Gradient.swift"; sourceTree = "<group>"; };
+		EDC2F1EA21DC69D400621F98 /* LightboxTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightboxTransition.swift; sourceTree = "<group>"; };
+		EDC2F1EB21DC69D400621F98 /* Color+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		EDC2F1EC21DC69D400621F98 /* LightboxImageStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightboxImageStub.swift; sourceTree = "<group>"; };
+		EDC2F1ED21DC69D400621F98 /* LightboxConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightboxConfig.swift; sourceTree = "<group>"; };
+		EDC2F1EE21DC69D400621F98 /* AssetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetManager.swift; sourceTree = "<group>"; };
+		EDC2F1EF21DC69D400621F98 /* LightboxImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightboxImage.swift; sourceTree = "<group>"; };
+		EDC2F1F121DC69D400621F98 /* FooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		EDC2F1F221DC69D400621F98 /* InfoLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoLabel.swift; sourceTree = "<group>"; };
+		EDC2F1F321DC69D400621F98 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		EDC2F1F421DC69D400621F98 /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		EDC2F1F521DC69D400621F98 /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +119,7 @@
 		ED23FCFC21CCCE650018B193 /* CC_IMG */ = {
 			isa = PBXGroup;
 			children = (
+				EDC2F1E321DC69C300621F98 /* Vendor */,
 				ED118BA921DA0B130026E298 /* Home */,
 				ED81DE5D21D0C8060034261E /* API */,
 				ED23FD1121CCEB630018B193 /* Model */,
@@ -119,6 +148,59 @@
 				ED81DE5E21D0C8130034261E /* CategoryEndpoint.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		EDC2F1E321DC69C300621F98 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				EDC2F1E421DC69D400621F98 /* Lightbox */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		EDC2F1E421DC69D400621F98 /* Lightbox */ = {
+			isa = PBXGroup;
+			children = (
+				EDC2F1E521DC69D400621F98 /* Source */,
+			);
+			path = Lightbox;
+			sourceTree = "<group>";
+		};
+		EDC2F1E521DC69D400621F98 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				EDC2F1E621DC69D400621F98 /* LightboxController.swift */,
+				EDC2F1E721DC69D400621F98 /* Library */,
+				EDC2F1EC21DC69D400621F98 /* LightboxImageStub.swift */,
+				EDC2F1ED21DC69D400621F98 /* LightboxConfig.swift */,
+				EDC2F1EE21DC69D400621F98 /* AssetManager.swift */,
+				EDC2F1EF21DC69D400621F98 /* LightboxImage.swift */,
+				EDC2F1F021DC69D400621F98 /* Views */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		EDC2F1E721DC69D400621F98 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				EDC2F1E821DC69D400621F98 /* LayoutConfigurable.swift */,
+				EDC2F1E921DC69D400621F98 /* UIView+Gradient.swift */,
+				EDC2F1EA21DC69D400621F98 /* LightboxTransition.swift */,
+				EDC2F1EB21DC69D400621F98 /* Color+Extensions.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		EDC2F1F021DC69D400621F98 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EDC2F1F121DC69D400621F98 /* FooterView.swift */,
+				EDC2F1F221DC69D400621F98 /* InfoLabel.swift */,
+				EDC2F1F321DC69D400621F98 /* HeaderView.swift */,
+				EDC2F1F421DC69D400621F98 /* LoadingIndicator.swift */,
+				EDC2F1F521DC69D400621F98 /* PageView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		EF7200CC095252B8B2E729DD /* Pods */ = {
@@ -231,7 +313,9 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CC_IMG/Pods-CC_IMG-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/Imaginary/Imaginary.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -241,7 +325,9 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Imaginary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -258,14 +344,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC2F1F821DC69D400621F98 /* UIView+Gradient.swift in Sources */,
 				ED23FD1021CCDA8C0018B193 /* APIHelper.swift in Sources */,
+				EDC2F1F621DC69D400621F98 /* LightboxController.swift in Sources */,
+				EDC2F20221DC69D400621F98 /* LoadingIndicator.swift in Sources */,
+				EDC2F1FF21DC69D400621F98 /* FooterView.swift in Sources */,
 				ED81DE5F21D0C8130034261E /* CategoryEndpoint.swift in Sources */,
+				EDC2F1FB21DC69D400621F98 /* LightboxImageStub.swift in Sources */,
 				ED0AD5D321D4771600515B0F /* ImgModelVM.swift in Sources */,
 				ED23FD0021CCCE650018B193 /* ViewController.swift in Sources */,
 				ED23FCFE21CCCE650018B193 /* AppDelegate.swift in Sources */,
+				EDC2F1FD21DC69D400621F98 /* AssetManager.swift in Sources */,
+				EDC2F20021DC69D400621F98 /* InfoLabel.swift in Sources */,
+				EDC2F1FA21DC69D400621F98 /* Color+Extensions.swift in Sources */,
+				EDC2F1FE21DC69D400621F98 /* LightboxImage.swift in Sources */,
 				ED118BAD21DA131C0026E298 /* CCLayout.swift in Sources */,
 				ED118BAB21DA0B350026E298 /* ImageCell.swift in Sources */,
+				EDC2F20121DC69D400621F98 /* HeaderView.swift in Sources */,
+				EDC2F1FC21DC69D400621F98 /* LightboxConfig.swift in Sources */,
+				EDC2F1F721DC69D400621F98 /* LayoutConfigurable.swift in Sources */,
+				EDC2F20321DC69D400621F98 /* PageView.swift in Sources */,
 				ED23FD1321CCEB740018B193 /* ImgModel.swift in Sources */,
+				EDC2F1F921DC69D400621F98 /* LightboxTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

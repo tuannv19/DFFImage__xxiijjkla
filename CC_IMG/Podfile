@@ -12,4 +12,6 @@ target 'CC_IMG' do
 #  pod 'PromiseKit/Alamofire', '~> 6.0'
   pod 'SDWebImage'
   pod 'SnapKit'
+  pod 'Imaginary'
+  
 end
